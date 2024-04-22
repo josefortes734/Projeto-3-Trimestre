@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar um Novo Professor</title>
+    <link rel="stylesheet" href="form-professores.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Adicionar Novo Professor</h2>
+        <form action="gestaoprofessores.html" method="post">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="Disciplina">Nome Disciplina:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="isexo">Sexo:</label>
+                        <input type="text" name="sexo" list="isexo">
+                        <datalist id="isexo">
+                            <option value="Masculino"></option>
+                            <option value="Femenino"></option>
+                        </datalist>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <button type="submit">Adicionar Professor</button>
+            <div class="butao"> <a href="gestaoprofessores.html"><button>Voltar Pagina Anterior</button></a></div>
+               
+        </form>
+    </div>
+</body>
+</html>

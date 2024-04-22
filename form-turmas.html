@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar um Nova Turma</title>
+    <link rel="stylesheet" href="form-turmas.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Adicionar Nova Turma</h2>
+        <form action="Gestaoturmas.html" method="post">
+            <div class="form-group">
+                <label for="nome">Nome Turma:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="iano">Ano Letivo:</label>
+                <input type="text" name="sexo" list="iano">
+                <datalist id="iano">
+                    <option value="7ºAno"></option>
+                    <option value="8ºAno"></option>
+                    <option value="9ºAno"></option>
+                    <option value="10ºAno"></option>
+                    <option value="11ºAno"></option>
+                    <option value="12ºAno"></option>
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="iserie">Serie/Area:</label>
+                <input type="text" name="serie" list="iserie">
+                <datalist id="iserie">
+                    <option value="CT"></option>
+                    <option value="Hum"></option>
+                    <option value="ES"></option>
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="isala">Sala:</label>
+                        <input type="number" name="sala" list="isala">
+            </div>
+            <div class="form-group">
+                <label for="ChefeTurma">ChefeTurma:</label>
+                <input type="text" id="ChefeTurma" name="ChefeTurma" required>
+            </div>
+            <button type="submit">Adicionar Professor</button>
+            <div class="butao"> <a href="Gestaoturmas.html"><button>Voltar Pagina Anterior</button></a></div>
+               
+        </form>
+    </div>
+</body>
+</html>
