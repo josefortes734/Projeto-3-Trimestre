@@ -42,18 +42,43 @@ input {
 }
 
 button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #ff69b4;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
     cursor: pointer;
-    margin-bottom: 7px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #ad467a;
+    margin-top: 3px;
+    margin-bottom: 2px;
 }
 
 button:hover {
-    background-color: #a05c7e;
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
 }
+button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  button:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
 a{
     text-align: center;
     color: #fff;
