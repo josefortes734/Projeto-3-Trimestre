@@ -149,11 +149,11 @@ header {
         padding-right: 24px;
         padding-left:8px;
     }
-    .card .button:hover:after {
+    .card .button button:hover:after {
         opacity: 1;
         right: 10px;
       }
-      .card .button:after {
+      .card .button button:after {
         content: "\00BB";
         position: absolute;
         opacity: 0;
