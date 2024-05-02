@@ -127,19 +127,42 @@ header {
     }
 
     .card .button{
-        font-size: 18px;
-        background-color: #f87ab9;
-        color: white;
-        text-decoration: none;
-        border: 2px solid transparent;
-        font-weight: bold;
-        padding: 9px 22px;
-        border-radius: 30px;
+        min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #ad467a;
+    margin-top: 3px;
+    margin-bottom: 2px;
     }
     .card .button:hover{
-        background-color: transparent;
-        border: 2px solid #f87ab9;
+        border-radius: 5px;
+        padding-right: 24px;
+        padding-left:8px;
     }
+    .card .button:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+      .card .button:hover:after {
+        content: "\00BB";
+        position: absolute;
+        opacity: 0;
+        font-size: 20px;
+        line-height: 40px;
+        top: 0;
+        right: -20px;
+        transition: 0.4s;
+      }
     /*contactos*/
     .contactos{
         width: 100%;
